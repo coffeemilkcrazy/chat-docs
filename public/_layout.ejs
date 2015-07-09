@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>Chatmatic Docs</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/docs.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://github.com/isagalaev/highlight.js/blob/master/src/styles/dark.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Cafe Documentation</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 sidebar">
+          <!-- Include _nav.ejs -->
+          <%- partial("_shared/_nav") %>
+        </div>
+        <div class="col-sm-8 col-sm-offset-1">
+          <%- yield %>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div id="footer">
+        <p>Copyright © Cafe</p>
+      </div>
+     </div>
+  </body>
+</html>

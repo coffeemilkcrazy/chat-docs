@@ -1,0 +1,19 @@
+  <% for(var slug in public._data) {%>
+      <% if (current.path[1] == slug) {%>
+        <% for(var i = 0; i < public._data[slug].list.length; ++i) { %>
+          <div class="<%= current.path[2]==public._data[slug].list[i].title ?'current':'' %>">
+            <a href="<%= public._data[slug].list[i].url %>" class="heading"><%= public._data[slug].list[i].name %></a>
+
+          <% if (current.path[2]==public._data[slug].list[i].title && public._data[slug].list[i].list) { %>
+            <ul>
+            <% for(var j = 0; j < public._data[slug].list[i].list.length; ++j) { %>
+              <li class="<%= current.path[3]==public._data[slug].list[i].list[j].title ?'active':'' %>">
+                <a href="<%= public._data[slug].list[i].list[j].url %>"><%= public._data[slug].list[i].list[j].name %></a>
+              </li>
+            <% } %>
+            </ul>
+          <% } %>
+          </div>
+        <% } %>
+      <% } %>
+  <% } %>

@@ -1,0 +1,85 @@
+body {
+  padding-top: 50px;
+}
+
+a {
+  color: #231f20;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none !important;
+}
+
+.sidebar .current .heading {
+  color: #231f20;
+}
+
+.sidebar .heading {
+  display: block;
+  padding-left: 14px;
+  color: #808890;
+  font-size: 17px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.sidebar ul .active > a {
+  color: #21aae1;
+}
+
+.sidebar ul a {
+  display: block;
+  color: #919699;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.sidebar ul {
+  margin-top: 7px;
+  margin-left: 20px;
+  padding: 0;
+}
+
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.sidebar ul li {
+  margin-bottom: 2px;
+  padding-left: 14px;
+  list-style-type: none;
+}
+
+.sidebar {
+  padding-top: 50px;
+  /*display: table-cell;*/
+  width: 240px;
+  height: 100%;
+  font-size: 14px;
+  font-family: "Helvetica Neue",HelveticaNeue,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-color: rgba(0,0,0,0);
+  -webkit-text-stroke-width: .3px;
+}
+
+ul, menu, dir {
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40px;
+}
+
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}

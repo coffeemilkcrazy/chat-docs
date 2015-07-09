@@ -1,0 +1,16 @@
+{
+  "globals": {
+    "title": "Acme Site",
+    "name"  : "John Doe",
+    "uri": "http://example.com",
+    "menu": [
+      {"title":"John", "link":"Doe", "submenu": [
+        {"title":"Anna", "link":"Smith"},
+        {"title":"Anna", "link":"Smith"}
+      ]},
+      {"title":"Anna", "link":"Smith"},
+      {"title":"Anna", "link":"Smith"},
+      {"title":"Peter","link":"Jones"}
+    ]
+  }
+}
